@@ -13,12 +13,13 @@ body{
   
 }
 .background{
-    background-color: #4C4C9D;
+    /*background-color: #151528;*/
+    background: linear-gradient(rgba(2, 2, 113, 0.779),rgba(0, 0, 0, 0.9)),url(../img/fondo.jpg) no-repeat;
     background-position: center;
     background-size:cover ;
     height: 100vh;
     width: 100%;
-    filter: blur(1px);
+    filter: blur(10px);
 }
 
 .navbar a{
@@ -88,7 +89,7 @@ body{
     width: 75%;
     height: 550px;
     margin-left: 0px;
-    background: linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 255, 0.605)),url(../img/fondo.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 255, 0.36)),url(../img/fondo.jpg) no-repeat;
     background-position: center;
     background-size:cover ;
     border-radius: 20px;
@@ -240,12 +241,15 @@ body{
     text-decoration: underline;
 }
 .btn {
+    width: 100%;
+    justify-content: center;
     display: inline-block;
     padding: 0.9rem 1.8rem;
     font-size: 16px;
     font-weight: 700;
     color: white;
-    border: 3px solid rgb(252, 70, 100);
+    border: 3px solid rgb(68, 2, 209);
+    /*border: 3px solid rgb(252, 70, 100);*/
     cursor: pointer;
     position: relative;
     background-color: transparent;
@@ -263,7 +267,8 @@ body{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(252, 70, 100);
+    background-color: rgb(68, 2, 209);
+    /*background-color: rgb(252, 70, 100);*/
     transform: translateX(-100%);
     transition: all .3s;
     z-index: -1;
