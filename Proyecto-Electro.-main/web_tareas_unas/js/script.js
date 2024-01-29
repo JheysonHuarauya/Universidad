@@ -16,3 +16,22 @@ function redirigir_jheyson(){
 function redirigir_adrian(){
     window.open('https://www.instagram.com/adrian22.11/', '_blank');
 }
+document.getElementById('ingresarBtn').addEventListener('click', function() {
+    event.preventDefault()
+    validar_ingreso();
+    setTimeout(function() {alert("hi");}, 200);
+    alert("hola");
+});
+/*por mientras*/
+function validar_ingreso(){
+    var usuario=document.getElementById("email").value;
+    var contraseña=document.getElementById("password").value;
+    console.log("Usuario:", usuario);
+    console.log("Contraseña:", contraseña);
+    alert("Usuario: "+usuario+"\nContraseña: "+contraseña);
+    if(usuario=="victor.orihuela@unas.edu.pe" && contraseña=="db1235879"){
+        setTimeout(function() {window.location.replace("home.html");}, 200);
+    }else{
+        alert("Usuario o contraseña incorrectos");
+    }
+}
