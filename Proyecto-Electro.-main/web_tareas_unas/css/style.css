@@ -137,13 +137,14 @@ body{
     transform: scale(1.2);
 }
 .container .login-section{
+    background-color: #000000ac;
     position: absolute;
     top: 0;
     right: 0;
     width: calc(100% - 58%);
     height: 100%;
     color: #fff;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 .login-section .form-box{
@@ -197,6 +198,7 @@ body{
     outline: none;
     font-size: 16px;
     padding-right: 28px;
+    color: rgb(68, 2, 209);
 
 
 }
@@ -270,7 +272,7 @@ body{
     background-color: rgb(68, 2, 209);
     /*background-color: rgb(252, 70, 100);*/
     transform: translateX(-100%);
-    transition: all .3s;
+    transition: all .5s;/*maneja el tiempo de transicion*/
     z-index: -1;
    }
    
@@ -289,4 +291,12 @@ body{
 }
 .create-account p a:hover{
     text-decoration: underline;
+}
+.register-link{
+    color:rgb(68, 2, 209)!important;
+    font-weight: bold;
+}
+.login-link{
+    color:rgb(68, 2, 209)!important;
+    font-weight: bold;
 }
