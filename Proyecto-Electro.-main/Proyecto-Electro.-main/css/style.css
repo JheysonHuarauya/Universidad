@@ -489,6 +489,9 @@ textarea.input {
 
 .header-logo .logo img {
   display: block;
+  width: 120px;
+  height: 70px;
+  margin-left: 60%;
 }
 
 /*----------------------------*\
