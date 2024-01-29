@@ -26,7 +26,7 @@ function validar_ingreso(){
     if(usuario=="admin" && contraseña=="1234"){
         /*window.open("home.html");*/
         setTimeout(function() {
-            window.location.replace("home.html");
+            window.location.replace("../repoexamenes/index.html");
         }, 100);
         alert("desea continuar");
     }else{
