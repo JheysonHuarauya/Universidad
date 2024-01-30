@@ -58,7 +58,19 @@ Tabbla del contenido
     font-weight: 400;
     color: #333;
   }
-  
+  body::-webkit-scrollbar{
+    width: 10px;
+  }
+    /* Estilo del thumb (la barra que puedes arrastrar) */
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(209, 0, 36); /* Color del thumb */
+  border-radius: 15px; /* Bordes redondeados del thumb */
+}
+
+/* Estilo del track (la barra en la que se mueve el thumb) */
+body::-webkit-scrollbar-track {
+  background-color: rgb(21, 22, 29); /* Color del track */
+}
   h1,
   h2,
   h3,

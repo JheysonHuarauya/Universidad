@@ -645,22 +645,20 @@
                 <h3 class="footer-title">Sobre nosotros</h3>
                 <p>
                   Somos un microemprendimiento realizando sus primeros pasos en
-                  el rubro de la informatica, estamos ubicados en la localidad
-                  de San Miguel de Tucuman.
+                  el rubro de la informatica.
                 </p>
                 <ul class="footer-links">
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-map-marker"></i>Argentina, Tucuman</a
-                    >
+                    <a href="#"><i class="fa fa-phone"></i>+5493814146349</a>
                   </li>
                   <li>
                     <a href="#"><i class="fa fa-phone"></i>+5493814146349</a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-envelope-o"></i>alvarez.cf98@gmail.com</a
-                    >
+                    <a href="#"><i class="fa fa-phone"></i>+5493814146349</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-envelope-o"></i>adrianaspilcueta2211@gmail.com</a>
                   </li>
                 </ul>
               </div>
@@ -670,11 +668,9 @@
               <div class="footer">
                 <h3 class="footer-title">Categorias</h3>
                 <ul class="footer-links">
-                  <li><a href="#">Ofertas</a></li>
-                  <li><a href="#">Notebook</a></li>
-                  <li><a href="#">Smartphones</a></li>
-                  <li><a href="#">Camaras</a></li>
-                  <li><a href="#">Accesorios</a></li>
+                  <li><a href="#top-header">Inicio</a></li>
+                  <li><a href="store_notebook.html">Curso</a></li>
+                  <li><a href="store_smartphones.html">Chat</a></li>
                 </ul>
               </div>
             </div>
@@ -740,11 +736,8 @@
                 </li>
               </ul>
               <span class="saludo">
-                <p>
-                  Hecho con <i class="fa fa-heart-o" aria-hidden="true"></i> por
-                  <a href="https://github.com/C-Alvarez98" target="_blank"
-                    >Cristian</a
-                  >
+                <p>Hecho con <i class="fa fa-heart-o" aria-hidden="true"></i> por
+                  <a href="https://github.com/AdrianAspi22" target="_blank">3 Desconocidos</a>
                 </p>
               </span>
             </div>
@@ -764,5 +757,26 @@
     <script src="js/nouislider.min.js"></script>
     <script src="js/jquery.zoom.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // Tu código aquí
+          var links = document.querySelectorAll('a[href^="#top-header"]');
+    
+        links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            var targetId = this.getAttribute('href').substring(1);
+            var targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+      });
+      </script>
   </body>
 </html>

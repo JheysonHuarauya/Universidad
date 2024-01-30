@@ -220,3 +220,20 @@
         filtrarProductos('0', '0');
         filtrarProductos('1','0');
   })(jQuery);
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('a[href^="#top-header"]');
+    
+    links.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            var targetId = this.getAttribute('href').substring(1);
+            var targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                gsap.to(window, { duration: 1, scrollTo: { y: targetElement.offsetTop }, ease: "power2.inOut" });
+            }
+        });
+    });
+});
